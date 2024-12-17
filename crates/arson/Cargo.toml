@@ -1,0 +1,8 @@
+[package]
+name = "arson"
+version = "0.1.0"
+edition.workspace = true
+rust_version.workspace = true
+
+[dependencies]
+

@@ -1,6 +1,5 @@
-[package]
-name = "arson"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+package.rust_version = "1.83.0"
+package.edition = "2021"
