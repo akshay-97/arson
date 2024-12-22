@@ -3,8 +3,7 @@ use system_schema::keyspaces;
 fn main() {
     //Keyspaces::check_compat::<Scylla>();
 }
-
-
+// Bidge <Enum, CQlType> 
 struct Keyspaces{
     table_name : String,
     keyspace_name :  String,
@@ -103,6 +102,12 @@ trait Table {
     fn clustering_keys(&self) -> &Self::ClusteringKeys;
 }
 
+// table!{
+//     keyspaces{
+//         table_name -> varchar,
+//         k_name -> varchar,
+//     }
+// }
 
 mod types{
     //have implementation of driver serialization and de serialization
