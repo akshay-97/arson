@@ -1,4 +1,9 @@
 use system_schema::keyspaces;
+mod dsl;
+mod dsl_impl;
+mod filter_dsl;
+mod select_dsl;
+mod expr;
 
 fn main() {
     //Keyspaces::check_compat::<Scylla>();
