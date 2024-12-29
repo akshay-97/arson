@@ -1,6 +1,6 @@
 use crate::{filter_dsl::{FilterDsl, Filter}, select_dsl::{SelectDsl, Select}};
 
-trait QueryDsl: Sized{
+pub trait QueryDsl: Sized{
     fn filter<Predicate>(self , predicate : Predicate) ->  Filter<Self,Predicate>
         where
             Self : FilterDsl<Predicate>

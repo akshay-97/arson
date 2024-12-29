@@ -3,10 +3,3 @@ pub trait FilterDsl<Predicate>{
     fn filter(self, predicate : Predicate) -> Self::Output;
 }
 pub type Filter<Source, Predicate> = <Source as FilterDsl<Predicate>>::Output;
-
-
-
-//String, &str ,
-// Expression { Varchar}
-// Column => Expression {Varchar}
-// AsExpression<

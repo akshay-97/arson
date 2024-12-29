@@ -131,17 +131,6 @@ trait ExpressionMethods : Expression + Sized{
         Grouped(Eq(self, value.as_expression()))
     }
 }
-/*
-post
-    .filter(post_id.eq("post name"))
-*/
 
-
-// pub fn col_is<T,V>(column : T, value : V) -> EqGrouped<T,V>
-// where
-//     T: Expression,
-//     V: Expression,
-//     T: AsExpression<<V as Expression>::CqlType>
-// {
-//     Grouped(Eq(column,value))
-// }
+/// ***** //
+pub struct SelectClause<Expr>(pub Expr);
